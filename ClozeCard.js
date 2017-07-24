@@ -6,13 +6,13 @@ var ClozeCard = function (text, cloze) {
     this.fullText = this.text + this.cloze; 
 };
 
-var tallestMountain = new ClozeCard ("Mount Everest is the tallest mountain in the world.", "Mount Everest"); 
+var tallestMountainCloze = new ClozeCard ("Mount Everest is the tallest mountain in the world.", "Mount Everest"); 
 
 //"Mount Everest"
-console.log(tallestMountain.cloze); 
+console.log(tallestMountainCloze.cloze); 
 
 //"..."is the tallest mountain in the world.
-console.log(tallestMountain.partial); 
+console.log(tallestMountainCloze.partial); 
 
 //Mount Everest is the tallest mountain in the world.
 console.log(tallestMountainCloze.fullText); 
